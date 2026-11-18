@@ -1,0 +1,100 @@
+.playerBox {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  border: 1px solid #252b3a;
+  border-radius: 16px;
+  background: #10131b;
+  box-shadow: 0 16px 34px rgb(21 29 49 / 16%);
+}
+
+.playerBox > div {
+  position: absolute;
+  inset: 0;
+}
+
+.playerLoading {
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid #e4e8f0;
+  border-radius: 13px;
+  color: #566176;
+  background: #fff;
+  font-size: 13px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.group > span {
+  font-weight: 600;
+}
+
+.speedBtn,
+.speedActive {
+  min-width: 39px;
+  padding: 5px 8px;
+  border: 1px solid #e1e5ef;
+  border-radius: 7px;
+  color: #566176;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: border-color 150ms ease, color 150ms ease, background-color 150ms ease;
+}
+
+.speedBtn:hover,
+.speedActive {
+  border-color: #5146e5;
+  color: #fff;
+  background: #5146e5;
+}
+
+.group input[type="range"] {
+  width: 90px;
+  accent-color: #5146e5;
+}
+
+.watched {
+  margin-left: auto;
+  color: #68738a;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.error {
+  margin: 10px 0 0;
+  color: #b42318;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .playerBox {
+    border-radius: 12px;
+  }
+
+  .controls {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .watched {
+    width: 100%;
+    margin-left: 0;
+  }
+}

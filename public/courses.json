@@ -1,0 +1,261 @@
+[
+  {
+    "id": 1,
+    "title": "React for Beginners",
+    "instructor": "Bro Code",
+    "category": "Web Development",
+    "level": "Beginner",
+    "emoji": "\u269b\ufe0f",
+    "description": "Learn components, props, state and hooks by building small real projects.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "What is React?",
+        "duration": "20 min",
+        "videoUrl": "https://www.youtube.com/watch?v=hn80mWvP-9g",
+        "quiz": [
+          {
+            "question": "React is mainly used to build...",
+            "options": [
+              "Databases",
+              "User interfaces",
+              "Operating systems",
+              "Compilers"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "React was created by?",
+            "options": [
+              "Google",
+              "Twitter",
+              "Facebook",
+              "Netflix"
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "React Components",
+        "duration": "12 min",
+        "videoUrl": "https://www.youtube.com/watch?v=yYiwxYqQ9vg",
+        "quiz": [
+          {
+            "question": "Props are used to...",
+            "options": [
+              "Pass data to child components",
+              "Style components",
+              "Fetch data",
+              "Route pages"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "Can a child component change its props?",
+            "options": [
+              "Yes",
+              "No, props are read-only",
+              "Only in class components",
+              "Only with hooks"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "State with useState",
+        "duration": "16 min",
+        "videoUrl": "https://www.youtube.com/watch?v=SpDG283b4bw",
+        "quiz": [
+          {
+            "question": "Which hook adds state to a function component?",
+            "options": [
+              "useEffect",
+              "useRef",
+              "useState",
+              "useMemo"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "What happens when state changes?",
+            "options": [
+              "Page reloads",
+              "Component re-renders",
+              "Nothing",
+              "App crashes"
+            ],
+            "answer": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Node.js and Express Basics",
+    "instructor": "Multi Author",
+    "category": "Backend",
+    "level": "Intermediate",
+    "emoji": "\ud83d\udfe2",
+    "openAccess": true,
+    "description": "Build a REST API with Express and connect it to MongoDB.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Intro to Node.js",
+        "duration": "1hr 20 min",
+        "videoUrl": "https://www.youtube.com/watch?v=TlB_eWDSMt4",
+        "quiz": [
+          {
+            "question": "Node.js runs JavaScript on the...",
+            "options": [
+              "Browser only",
+              "Server",
+              "Printer",
+              "Database"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "Which engine does Node.js use?",
+            "options": [
+              "SpiderMonkey",
+              "Chakra",
+              "V8",
+              "Gecko"
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Express js",
+        "duration": "24 min",
+        "videoUrl": "https://www.youtube.com/watch?v=ha_leEpnT30",
+        "quiz": [
+          {
+            "question": "Which method handles a GET request in Express?",
+            "options": [
+              "app.get()",
+              "app.fetch()",
+              "app.read()",
+              "app.take()"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "req.params is used to read...",
+            "options": [
+              "Request body",
+              "URL parameters",
+              "Headers only",
+              "Cookies only"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Connecting MongoDB",
+        "duration": "19 min",
+        "videoUrl": "https://www.youtube.com/watch?v=xrglM8U0Zv8",
+        "quiz": [
+          {
+            "question": "Which library is commonly used to model MongoDB data in Node?",
+            "options": [
+              "Mongoose",
+              "Sequelize",
+              "Knex",
+              "Prisma Client"
+            ],
+            "answer": 0
+          },
+          {
+            "question": "MongoDB stores data as...",
+            "options": [
+              "Tables",
+              "Documents",
+              "Spreadsheets",
+              "Graphs only"
+            ],
+            "answer": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "HTML and CSS Crash Course",
+    "instructor": "Apna College",
+    "category": "Web Development",
+    "level": "Beginner",
+    "emoji": "\ud83c\udfa8",
+    "description": "Start from zero and build responsive pages with Flexbox and Grid.",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "HTML",
+        "duration": "2hrs",
+        "videoUrl": "https://www.youtube.com/watch?v=HcOc7P5BMi4",
+        "quiz": [
+          {
+            "question": "Which tag is used for the largest heading?",
+            "options": [
+              "<h6>",
+              "<h1>",
+              "<head>",
+              "<title>"
+            ],
+            "answer": 1
+          },
+          {
+            "question": "Which tag creates a link?",
+            "options": [
+              "<link>",
+              "<a>",
+              "<href>",
+              "<url>"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Styling with CSS",
+        "duration": "7hrs",
+        "videoUrl": "https://www.youtube.com/watch?v=ESnrn1kAD4E",
+        "quiz": [
+          {
+            "question": "Which property changes text color?",
+            "options": [
+              "font-color",
+              "text-color",
+              "color",
+              "foreground"
+            ],
+            "answer": 2
+          },
+          {
+            "question": "Which selector targets a class?",
+            "options": [
+              ".name",
+              "#name",
+              "name",
+              "*name"
+            ],
+            "answer": 0
+          }
+        ]
+      }
+      
+    ]
+  }
+]

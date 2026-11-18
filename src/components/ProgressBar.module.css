@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.track {
+  flex: 1;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e9ebf3;
+}
+
+.fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7167f0, #5146e5);
+  transition: width 350ms ease;
+}
+
+.label {
+  min-width: 38px;
+  color: #566176;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: right;
+}

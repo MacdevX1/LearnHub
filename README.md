@@ -32,3 +32,4 @@ The production site is written to `dist/`. Verify it locally with `npm run previ
 
 Course data is fetched from `public/courses.json`. No server-side secrets or environment variables are required. YouTube videos must allow embedding for playback to work.
 # LearnHub
+# LearnHub

@@ -1,0 +1,93 @@
+.navbar {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  border-bottom: 1px solid rgb(228 232 240 / 85%);
+  background: rgb(255 255 255 / 90%);
+  backdrop-filter: blur(16px);
+}
+
+.inner {
+  display: flex;
+  width: min(1120px, 100%);
+  min-height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 12px 28px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #172033;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.logo::before {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 11px;
+  color: #fff;
+  background: linear-gradient(145deg, #7167f0, #5146e5);
+  box-shadow: 0 5px 12px rgb(81 70 229 / 23%);
+  content: "L";
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.links a {
+  padding: 9px 13px;
+  border-radius: 9px;
+  color: #667085;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 150ms ease, background-color 150ms ease;
+}
+
+.links a:hover {
+  color: #3026b5;
+  background: #f5f4ff;
+}
+
+.links .active {
+  color: #5146e5;
+  background: #eeedff;
+}
+
+@media (max-width: 640px) {
+  .inner {
+    min-height: 64px;
+    padding: 10px 18px;
+  }
+
+  .logo {
+    gap: 8px;
+    font-size: 17px;
+  }
+
+  .logo::before {
+    width: 31px;
+    height: 31px;
+  }
+
+  .links {
+    gap: 0;
+  }
+
+  .links a {
+    padding: 8px 9px;
+    font-size: 13px;
+  }
+}
