@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import axios from 'axios';
+import courseData from '../data/courses.json';
 
 const AppContext = createContext();
 
@@ -14,9 +14,9 @@ function loadFromStorage(key, fallback) {
 }
 
 export function AppProvider({ children }) {
-  const [courses, setCourses] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [courses] = useState(courseData);
+  const loading = false;
+  const error = '';
 
   // ids of enrolled courses -> [1, 3]
   const [enrolled, setEnrolled] = useState(() => loadFromStorage('enrolled', []));
@@ -24,20 +24,6 @@ export function AppProvider({ children }) {
   const [completed, setCompleted] = useState(() => loadFromStorage('completed', {}));
   // best quiz score per lesson -> { "1-2": 2 }
   const [quizScores, setQuizScores] = useState(() => loadFromStorage('quizScores', {}));
-
-  // fetch courses once when the app loads
-  useEffect(() => {
-    axios
-      .get(import.meta.env.BASE_URL + 'courses.json')
-      .then((res) => {
-        setCourses(res.data);
-        setLoading(false);
-      })
-      .catch(() => {
-        setError('Could not load courses. Please try again.');
-        setLoading(false);
-      });
-  }, []);
 
   // keep localStorage in sync with state
   useEffect(() => {

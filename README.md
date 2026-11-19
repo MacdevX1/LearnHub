@@ -16,7 +16,7 @@ Requires Node.js `^20.19.0` or `>=22.12.0`.
 - Lesson + course progress saved in localStorage
 - Dashboard with enrolled courses
 
-Course data lives in `public/courses.json` (fetched with axios).
+Course data lives in `src/data/courses.json` and is bundled into the production build.
 Replace the sample `videoUrl` values with your own video links.
 
 ## Deploy
@@ -30,6 +30,6 @@ The production site is written to `dist/`. Verify it locally with `npm run previ
 - **Vercel:** import the repo, framework preset Vite (`vercel.json` handles route refresh).
 - **GitHub Pages / sub-path:** set `base: '/repo-name/'` in `vite.config.js`, then build and publish `dist/`. Configure the host to serve `index.html` for SPA routes (or add the host-specific 404 fallback); this app uses BrowserRouter.
 
-Course data is fetched from `public/courses.json`. No server-side secrets or environment variables are required. YouTube videos must allow embedding for playback to work.
+Course data is bundled from `src/data/courses.json`. No server-side secrets or environment variables are required. YouTube videos must allow embedding for playback to work.
 # LearnHub
 # LearnHub
